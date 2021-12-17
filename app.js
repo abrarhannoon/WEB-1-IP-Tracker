@@ -35,16 +35,14 @@ function IntialResult(){
     })
 }
 let map = L.map('map').setView([latt, lngg], 13)
-L.tileLayer('https://api.mapbox.com/styles/v1/%7Bid%7D/tiles/%7Bz%7D/%7Bx%7D/%7By%7D?access_token=%7BaccessToken%7D', {
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     maxZoom: 18,
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
     accessToken: MAP_API
  }).addTo(map);
-data.location.lat
-data.location.lng
 var greenIcon = L.icon({
-    iconUrl: 'icon-location.svg'
+    iconUrl: './Images/icon-location.svg'
 });
 var marker =L.marker([latt, lngg], {icon: greenIcon}).addTo(map);
