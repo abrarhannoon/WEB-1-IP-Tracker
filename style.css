@@ -49,6 +49,7 @@
     right: 15vw;
     border-radius: 12px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
   }
   div h6 {
     color: #969696;
@@ -75,3 +76,9 @@
       width:100vw;
       height:67vh;
   }
+  #map {
+    width: 100vw;
+    height: 67vh;
+  }
+ 
+   
