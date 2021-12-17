@@ -7,7 +7,7 @@
   .container {
     width: 100vw;
     height: 33vh;
-    background: url("backGround.png") no-repeat 100% 100% / cover;
+    background: url("./Images/backGround.png") no-repeat 100% 100% / cover;
     text-align: center;
     color: #fff;
     position: relative;
