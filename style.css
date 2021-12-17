@@ -1,1 +1,77 @@
-/*Here Is The Style*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Sans-serif, "Rubik";
+    color: #000;
+  }
+  .container {
+    width: 100vw;
+    height: 33vh;
+    background: url("backGround.png") no-repeat 100% 100% / cover;
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+  .insert {
+    width: 27%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  input,button {
+    height: 100%;
+    position: absolute;
+    border: none;
+  }
+  input {
+    width: 87%;
+    left: 0;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+  }
+  button {
+      width: 13%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 150%; 
+    right: 0;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  .div {
+    width: 70vw;
+    height: 20vh;
+    background-color: White;
+    position: absolute;
+    bottom: -10vh;
+    right: 15vw;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+  div h6 {
+    color: #969696;
+    padding: 10px;
+    letter-spacing:1px;
+  }
+  
+  #part1,#part2,#part3,#part4{
+    width: 22%;
+    height: 100px;
+    margin-top: 10px;
+    position: relative;
+  }
+  #part1::after, #part2::after, #part3::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    right: -15px;
+    top: 15px;
+    background-color: #969696;
+  }
+  .bottom{
+      width:100vw;
+      height:67vh;
+  }
