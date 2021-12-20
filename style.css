@@ -3,7 +3,6 @@
   padding: 0;
   color: #000;
   font-family: "Rubik", sans-serif;
-  font-size: 18px;
 }
 #container {
   width: 100vw;
@@ -13,27 +12,27 @@
 }
 #insert {
   width: 30vw;
-  height: 6vh;
+  height: 7vh;
 
 }
-input,
-button {
-  height: 100%;
-  border: none;
-}
 input {
+  height: 6vh;
+  height:7vh;
+  border: none;
+  outline: none;
+}
+input[type="text"] {
+  box-sizing:border-box;
   padding: 10px;
   width: 26vw;
   left: 0;
-  border-bottom-left-radius: 12px;
-  border-top-left-radius: 12px;
+  border-radius: 12px 0 0 12px;
 }
-button {
+input[type="submit"] {
   width: 4vw;
   font-size: 150%;
   right: 0;
-  border-bottom-right-radius: 12px;
-  border-top-right-radius: 12px;
+  border-radius: 0 12px 12px 0;
 }
 #div {
   z-index: 1000;
@@ -107,10 +106,10 @@ p:first-child {
     position: relative;
     bottom: 3vh;
   }
-  input {
+  input[type="text"] {
     width: 52vw;
   }
-  button {
+  input[type="submit"] {
     width: 8vw;
   }
 }
