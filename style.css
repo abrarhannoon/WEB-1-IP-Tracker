@@ -113,6 +113,7 @@ p:first-child {
   button {
     width: 8vw;
   }
+<<<<<<< HEAD
 }
 
 /* Large Screens */
@@ -121,6 +122,18 @@ p:first-child {
   p:first-child {
     font-size: 18px;
     padding: 20px;
+=======
+  .div {
+    width: 70vw;
+    height: 20vh;
+    background-color: White;
+    position: absolute;
+    bottom: -10vh;
+    right: 15vw;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+>>>>>>> e4976f3cbaec9acc4eb03e71ae92b7e45a6dc02e
   }
   p:last-child,
   #insert {
@@ -131,4 +144,26 @@ p:first-child {
     top: 3vh;
     margin-top: -4vh;
   }
+<<<<<<< HEAD
 }
+=======
+  #part1::after, #part2::after, #part3::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    right: -15px;
+    top: 15px;
+    background-color: #969696;
+  }
+  .bottom{
+      width:100vw;
+      height:67vh;
+  }
+  #map {
+    width: 100vw;
+    height: 67vh;
+  }
+ 
+   
+>>>>>>> e4976f3cbaec9acc4eb03e71ae92b7e45a6dc02e
