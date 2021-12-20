@@ -1,130 +1,134 @@
 * {
-    margin: 0;
-    padding: 0;
-    color: #000;
-    font-family: "Rubik", sans-serif;
-    font-size: 18px;
-  }
-  #container {
-    width: 100vw;
-    height: 33vh;
-    background: url("./Images/backGround.png") no-repeat 100% 100% / cover;
-    text-align: center;
-  }
-  #insert {
-    width: 30vw;
-    height: 6vh;
-  }
-  input,
-  button {
-    height: 100%;
-    border: none;
-  }
-  input {
-    padding: 10px;
-    width: 26vw;
-    left: 0;
-    border-bottom-left-radius: 12px;
-    border-top-left-radius: 12px;
-  }
-  button {
-    width: 4vw;
-    font-size: 150%;
-    right: 0;
-    border-bottom-right-radius: 12px;
-    border-top-right-radius: 12px;
-  }
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+#container {
+  width: 100vw;
+  height: 33vh;
+  background: url("./Images/backGround.png") no-repeat 100% 100% / cover;
+  text-align: center;
+}
+#insert {
+  width: 30vw;
+  height: 6vh;
+
+}
+input,
+button {
+  height: 100%;
+  border: none;
+}
+input {
+  padding: 10px;
+  width: 26vw;
+  left: 0;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+}
+button {
+  width: 4vw;
+  font-size: 150%;
+  right: 0;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+}
+#div {
+  z-index: 1000;
+  justify-content: space-evenly;
+  width: 70vw;
+  height: 20vh;
+  bottom: -10vh;
+  right: 15vw;
+  border-radius: 12px;
+}
+p:first-child {
+  color: #969696;
+  padding: 15px;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.parts {
+  width: 16vw;
+  height: 16vh;
+}
+.parts::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16vh;
+  right: -1vw;
+  top: 1vh;
+  background-color: #969696;
+}
+.parts:last-child::after {
+  display: none;
+}
+#map {
+  width: 100vw;
+  height: 67vh;
+}
+
+.map-container {
+  background-color: black;
+  margin-top: -70px;
+  min-height: 79vh;
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
   #div {
-    z-index: 1000;
-    justify-content: space-evenly;
-    width: 70vw;
-    height: 20vh;
-    bottom: -10vh;
-    right: 15vw;
-    border-radius: 12px;
-  }
-  p:first-child {
-    color: #969696;
-    padding: 15px;
-    font-size: 10px;
-    letter-spacing: 1px;
-  }
-  .parts {
-    width: 16vw;
-    height: 16vh;
+    width: 60vw;
+    height: 35vh;
+    bottom: -20vh;
+    right: 20vw;
+    flex-direction: column;
   }
   .parts::after {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 16vh;
-    right: -1vw;
-    top: 1vh;
-    background-color: #969696;
+    display: none;
   }
-  .parts:last-child::after {
-    display: none;
+  .parts {
+    width: 60vw;
+    height: 8vh;
   }
-  #map {
-    width: 100vw;
-    height: 67vh;
-  }z
-  .map-container {
-    background-color: black;
-    margin-top: -70px;
-    min-height: 79vh;
+  p:last-child {
+    margin: -15px;
+    font-size: 14px;
   }
-  /* Mobile */
-  @media (max-width: 767px) {
-    #div {
-      width: 60vw;
-      height: 35vh;
-      bottom: -20vh;
-      right: 20vw;
-      flex-direction: column;
-    }
-    .parts::after {
-      display: none;
-    }
-    .parts {
-      width: 60vw;
-      height: 8vh;
-    }
-    p:last-child {
-      margin: -15px;
-      font-size: 14px;
-    }
-    p:first-child {
-      padding: 5px;
-    }
-    #insert {
-      width: 60vw;
-      font-size: 11px;
-      position: relative;
-      bottom: 3vh;
-    }
-    input {
-      width: 52vw;
-    }
-    button {
-      width: 8vw;
-    }
+  p:first-child {
+    padding: 5px;
   }
-  /* Large Screens */
-  @media (min-width: 1200px) {
-    p:first-child {
-      font-size: 18px;
-      padding: 20px;
-    }
-    p:last-child,
-    #insert {
-      font-size: 23px;
-    }
-    #insert {
-      position: relative;
-      top: 3vh;
-      margin-top: -4vh;
-    }
+  #insert {
+    width: 60vw;
+    font-size: 11px;
+    position: relative;
+    bottom: 3vh;
   }
-  
-  
+  input {
+    width: 52vw;
+  }
+  button {
+    width: 8vw;
+  }
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+  p:first-child {
+    font-size: 18px;
+    padding: 20px;
+  }
+  p:last-child,
+  #insert {
+    font-size: 23px;
+  }
+  #insert {
+    position: relative;
+    top: 3vh;
+    margin-top: -4vh;
+  }
+}
