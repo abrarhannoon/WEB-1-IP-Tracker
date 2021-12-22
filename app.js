@@ -53,7 +53,7 @@
     function SetValue(data){
         IP1.textContent=data.ip
         Locations.textContent=`${data.location.city},${data.location.country} ${data.location.postalCode}`
-        TimeZone.textContent=data.location.timezone
+        TimeZone.textContent=`UTC ${data.location.timezone}`
         ISP.textContent=data.isp
         let latt = data.location.lat
         let lngg = data.location.lng
