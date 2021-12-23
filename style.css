@@ -12,8 +12,6 @@
 }
 #insert {
   width: 30vw;
-  height: 7vh;
-  bottom: 3vh;
 }
 input {
   height: 6vh;
@@ -38,8 +36,7 @@ input[type="submit"] {
   z-index: 1000;
   justify-content: space-evenly;
   width: 70vw;
-  height: 20vh;
-  bottom: -10vh;
+  top: 25vh;
   right: 15vw;
   border-radius: 12px;
 }
@@ -51,16 +48,15 @@ p:first-child {
 }
 .parts {
   width: 16vw;
-  height: 16vh;
 }
 .parts::after {
   content: "";
   position: absolute;
   width: 1px;
-  height: 16vh;
-  right: -1vw;
-  top: 1vh;
-  background-color: #969696;
+  height: 6vh;
+  right: -2vw;
+  top: 1%;
+  background-color: #cac3c3;
 }
 .parts:last-child::after {
   display: none;
@@ -78,13 +74,14 @@ p:first-child {
 
 /* Mobile */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #div {
     width: 60vw;
-    height: 35vh;
-    bottom: -20vh;
+    min-height: 45vh;
+    top:21vh;
     right: 20vw;
     flex-direction: column;
+    justify-content: space-evenly;
   }
   .parts::after {
     display: none;
