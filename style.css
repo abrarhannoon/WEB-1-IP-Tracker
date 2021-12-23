@@ -13,7 +13,7 @@
 #insert {
   width: 30vw;
   height: 7vh;
-
+  bottom: 3vh;
 }
 input {
   height: 6vh;
@@ -46,7 +46,7 @@ input[type="submit"] {
 p:first-child {
   color: #969696;
   padding: 15px;
-  font-size: 10px;
+  font-size: small;
   letter-spacing: 1px;
 }
 .parts {
@@ -102,7 +102,7 @@ p:first-child {
   }
   #insert {
     width: 60vw;
-    font-size: 11px;
+    font-size: small;
     position: relative;
     bottom: 3vh;
   }
@@ -111,23 +111,5 @@ p:first-child {
   }
   input[type="submit"] {
     width: 8vw;
-  }
-}
-
-/* Large Screens */
-
-@media (min-width: 1200px) {
-  p:first-child {
-    font-size: 18px;
-    padding: 20px;
-  }
-  p:last-child,
-  #insert {
-    font-size: 23px;
-  }
-  #insert {
-    position: relative;
-    top: 3vh;
-    margin-top: -4vh;
   }
 }
