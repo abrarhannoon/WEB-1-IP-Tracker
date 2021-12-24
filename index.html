@@ -23,38 +23,37 @@
 </head>
 
 <body>
-    <div id='container' class='position-relative text-center'>
-        <h1 class='text-white mb-4' style='padding:20px;'>IP Address Tracker</h1>
-        <div id='inputContainer' class='ms-auto me-auto position-relative'>
-            <form>
-                <input class="position-absolute border-0" id='inputArea' type="text"
-                    placeholder="Serch for any IP address or domain ">
-                <input class='bg-black text-white  position-absolute fw-bold border-0 fs-1' id='searchBtn' type='submit'
-                    value='&#8250'></input>
+    <div id='main' class='d-flex justify-content-start align-items-center flex-column text-center'>
+        <h1 class='text-white fw-bold my-3 my-lg-4'>IP Address Tracker</h1>
+        <div id='inputContainer' class="mb-4 mb-lg-5 w-50 d-flex justify-content-center">
+            <form class="d-flex w-100">
+                <input class="border-0 p-2 w-75" id='inputArea' type="text"placeholder="Search for any IP address or domain ">
+                <input class='w-25 bg-black text-white fw-bold border-0 fs-1' id='searchBtn' type='submit'value='&#8250'></input>
             </form>
         </div>
-        <div id="outputArea" class="bg-white  shadow-lg d-flex py-5">
-            <div class="result position-relative">
-                <p class="fw-bold p-0 fs-6">IP ADDRESS</p>
-                <p id='IP' class="fw-bold">192.212.174.101</p>
+        <div id="outputArea" class="mt-lg-4 row bg-white shadow-lg py-4 w-75">
+            <div class="result col-md position-relative">
+                <p class="p-0 small opacity-75">IP ADDRESS</p>
+                <p id='IP' class="fw-bolder">192.212.174.101</p>
             </div>
-            <div class="result position-relative">
-                <p class="fw-bold p-0 fs-6">LOCATION</p>
-                <p id="Location" class="fw-bold ">Brooklyn,NY 10001</p>
+            <div class="result col-md position-relative">
+                <p class="p-0 small opacity-75">LOCATION</p>
+                <p id="Location" class="fw-bolder ">Brooklyn,NY 10001</p>
             </div>
-            <div class="result position-relative">
-                <p class="fw-bold p-0 fs-6">TIMEZONE</p>
-                <p id="TimeZone" class="fw-bold ">UTC-05:00</p>
+            <div class="result col-md position-relative">
+                <p class="p-0 small opacity-75">TIMEZONE</p>
+                <p id="TimeZone" class="fw-bolder ">UTC-05:00</p>
             </div>
-            <div class="result position-relative">
-                <p class="fw-bold p-0 fs-6">ISP</p>
-                <p id="ISP" class="fw-bold">SpaceX Starlink</p>
+            <div class="result col-md position-relative">
+                <p class="p-0 small opacity-75">ISP</p>
+                <p id="ISP" class="fw-bolder">SpaceX Starlink</p>
             </div>
         </div>
     </div>
     <div id='map'></div>
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- MY JS -->
     <script src="app.js"></script>
 
 </html>

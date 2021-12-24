@@ -1,103 +1,59 @@
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
   color: #000;
   font-family: "Rubik", sans-serif;
 }
-#container {
-  width: 100vw;
-  height: 33vh;
+
+::selection {
+  background-color: #4a4caa94;
+}
+
+#main {
+  height: 30vh;
   background: url("./Images/backGround.png") no-repeat 100% 100% / cover;
- 
 }
-#inputContainer {
-  width: 30vw;
+
+#inputArea{
+  outline: 0;
 }
-input {
-  height: 6vh;
-  height:7vh;
- 
+
+#inputArea:focus-within {
+  transition: 0.5s ease;
+  box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
-input[type="text"] {
-  box-sizing:border-box;
-  padding: 10px;
-  width: 26vw;
-  left: 0;
-  border-radius: 12px 0 0 12px;
+
+#map{
+  height: 70vh;
 }
-input[type="submit"] {
-  width: 4vw;
-  right: 0;
-  border-radius: 0 12px 12px 0;
+
+#inputContainer form{
+  border-radius: 12px;
+  overflow: hidden;
 }
-#outputArea {
+
+#outputArea{
   z-index: 1000;
-  justify-content: space-evenly;
-  width: 70vw;
-  top: 25vh;
-  right: 15vw;
   border-radius: 12px;
 }
-p:first-child {
-  color: #969696;
-  padding: 15px;
-  letter-spacing: 1px;
-}
-.result {
-  width: 16vw;
-}
-.result::after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 16vh;
-  right: -2vw;
-  top: 1%;
-  background-color: #cac3c3;
-}
-.result:last-child::after {
-  display: none;
-}
-#map {
-  width: 100vw;
-  height: 67vh;
-}
 
-/* Mobile */
+.col-md:not(:first-child)::before {
+  content: "";
+  height: 85%;
+  position: absolute;
+  top: 2%;
+  left: 0;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.185);
+}
 
 @media (max-width: 768px) {
-  #outputArea {
-    width: 60vw;
-    min-height: 45vh;
-    top:21vh;
-    right: 20vw;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  .result::after {
+  .col-md:not(:first-child)::before {
     display: none;
+}
+  #inputContainer{
+    min-width: 75%;
   }
-  .result {
-    width: 60vw;
-    height: 8vh;
-  }
-  p:last-child {
-    margin: -15px;
-    font-size: 14px;
-  }
-  p:first-child {
-    padding: 5px;
-  }
-  #inputContainer {
-    width: 60vw;
-    font-size: small;
-    position: relative;
-    bottom: 3vh;
-  }
-  input[type="text"] {
-    width: 52vw;
-  }
-  input[type="submit"] {
-    width: 8vw;
-  }
+  #map {
+    height: 150vh;
+}
 }
