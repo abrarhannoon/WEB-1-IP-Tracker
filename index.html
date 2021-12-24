@@ -19,17 +19,17 @@
 <body>
     <div id='container'class='position-relative'> 
         <h1 class='text-white mb-4' style='padding:20px;'>IP Address Tracker</h1> 
-        <div id='insert'class='ms-auto me-auto position-relative'>
+        <div id='inputContainer'class='ms-auto me-auto position-relative'>
             <form>
-                <input class="position-absolute" id='input'type="text" placeholder="Serch for any IP address or domain ">
-                <input class='bg-black text-white  position-absolute fw-bold' id='locationbutton' type='submit' value='&#8250'></input>
+                <input class="position-absolute" id='inputArea'type="text" placeholder="Serch for any IP address or domain ">
+                <input class='bg-black text-white  position-absolute fw-bold' id='searchBtn' type='submit' value='&#8250'></input>
             </form>
         </div>  
-        <div id="div" class="bg-white  shadow-lg d-flex position-absolute py-5">
-            <div class="parts position-relative"><p class="fw-bold p-0">IP ADDRESS</p> <p id='IP'class="fw-bold">192.212.174.101</p></div>
-            <div class="parts position-relative"><p class="fw-bold p-0">LOCATION</p><p id="Location"class="fw-bold ">Brooklyn,NY 10001</p></div>
-            <div class="parts position-relative"><p class="fw-bold p-0">TIMEZONE</p><p id="TimeZone"class="fw-bold ">UTC-05:00</p></div>
-            <div class="parts position-relative"><p class="fw-bold p-0">ISP</p><p id="ISP"class="fw-bold">SpaceX Starlink</p></div>
+        <div id="outputArea" class="bg-white  shadow-lg d-flex position-absolute py-5">
+            <div class="result position-relative"><p class="fw-bold p-0">IP ADDRESS</p> <p id='IP'class="fw-bold">192.212.174.101</p></div>
+            <div class="result position-relative"><p class="fw-bold p-0">LOCATION</p><p id="Location"class="fw-bold ">Brooklyn,NY 10001</p></div>
+            <div class="result position-relative"><p class="fw-bold p-0">TIMEZONE</p><p id="TimeZone"class="fw-bold ">UTC-05:00</p></div>
+            <div class="result position-relative"><p class="fw-bold p-0">ISP</p><p id="ISP"class="fw-bold">SpaceX Starlink</p></div>
         </div>
         </div>
         <div id='map'>  </div>

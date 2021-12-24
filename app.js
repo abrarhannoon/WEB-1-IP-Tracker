@@ -7,11 +7,11 @@
     const Locations=qs('#Location')
     const TimeZone=qs('#TimeZone')
     const ISP=qs('#ISP')
-    const SearchBtn=qs('#locationbutton')
-    const TextBox = qs('#input');
+    const SearchBtn=qs('form')
+    const TextBox = qs('#inputArea');
     
     window.addEventListener('load',GetMyIP)
-    SearchBtn.addEventListener('click', getIP)
+    SearchBtn.addEventListener('submit', getIP)
     TextBox.addEventListener('keypress',HitEnter)
     
     async function GetMyIP(){

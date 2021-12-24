@@ -10,7 +10,7 @@
   background: url("./Images/backGround.png") no-repeat 100% 100% / cover;
   text-align: center;
 }
-#insert {
+#inputContainer {
   width: 30vw;
 }
 input {
@@ -32,7 +32,7 @@ input[type="submit"] {
   right: 0;
   border-radius: 0 12px 12px 0;
 }
-#div {
+#outputArea {
   z-index: 1000;
   justify-content: space-evenly;
   width: 70vw;
@@ -46,10 +46,10 @@ p:first-child {
   font-size: small;
   letter-spacing: 1px;
 }
-.parts {
+.result {
   width: 16vw;
 }
-.parts::after {
+.result::after {
   content: "";
   position: absolute;
   width: 1px;
@@ -58,7 +58,7 @@ p:first-child {
   top: 1%;
   background-color: #cac3c3;
 }
-.parts:last-child::after {
+.result:last-child::after {
   display: none;
 }
 #map {
@@ -66,16 +66,10 @@ p:first-child {
   height: 67vh;
 }
 
-.map-container {
-  background-color: black;
-  margin-top: -70px;
-  min-height: 79vh;
-}
-
 /* Mobile */
 
 @media (max-width: 768px) {
-  #div {
+  #outputArea {
     width: 60vw;
     min-height: 45vh;
     top:21vh;
@@ -83,10 +77,10 @@ p:first-child {
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .parts::after {
+  .result::after {
     display: none;
   }
-  .parts {
+  .result {
     width: 60vw;
     height: 8vh;
   }
@@ -97,7 +91,7 @@ p:first-child {
   p:first-child {
     padding: 5px;
   }
-  #insert {
+  #inputContainer {
     width: 60vw;
     font-size: small;
     position: relative;
