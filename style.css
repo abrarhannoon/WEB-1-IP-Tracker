@@ -8,7 +8,7 @@
   width: 100vw;
   height: 33vh;
   background: url("./Images/backGround.png") no-repeat 100% 100% / cover;
-  text-align: center;
+ 
 }
 #inputContainer {
   width: 30vw;
@@ -16,8 +16,7 @@
 input {
   height: 6vh;
   height:7vh;
-  border: none;
-  outline: none;
+ 
 }
 input[type="text"] {
   box-sizing:border-box;
@@ -28,7 +27,6 @@ input[type="text"] {
 }
 input[type="submit"] {
   width: 4vw;
-  font-size: 150%;
   right: 0;
   border-radius: 0 12px 12px 0;
 }
@@ -43,7 +41,6 @@ input[type="submit"] {
 p:first-child {
   color: #969696;
   padding: 15px;
-  font-size: small;
   letter-spacing: 1px;
 }
 .result {
@@ -53,7 +50,7 @@ p:first-child {
   content: "";
   position: absolute;
   width: 1px;
-  height: 6vh;
+  height: 16vh;
   right: -2vw;
   top: 1%;
   background-color: #cac3c3;

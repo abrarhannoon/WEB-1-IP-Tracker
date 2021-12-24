@@ -23,31 +23,31 @@
 </head>
 
 <body>
-    <div id='container' class='position-relative'>
+    <div id='container' class='position-relative text-center'>
         <h1 class='text-white mb-4' style='padding:20px;'>IP Address Tracker</h1>
         <div id='inputContainer' class='ms-auto me-auto position-relative'>
             <form>
-                <input class="position-absolute" id='inputArea' type="text"
+                <input class="position-absolute border-0" id='inputArea' type="text"
                     placeholder="Serch for any IP address or domain ">
-                <input class='bg-black text-white  position-absolute fw-bold' id='searchBtn' type='submit'
+                <input class='bg-black text-white  position-absolute fw-bold border-0 fs-1' id='searchBtn' type='submit'
                     value='&#8250'></input>
             </form>
         </div>
-        <div id="outputArea" class="bg-white  shadow-lg d-flex position-absolute py-5">
+        <div id="outputArea" class="bg-white  shadow-lg d-flex py-5">
             <div class="result position-relative">
-                <p class="fw-bold p-0">IP ADDRESS</p>
+                <p class="fw-bold p-0 fs-6">IP ADDRESS</p>
                 <p id='IP' class="fw-bold">192.212.174.101</p>
             </div>
             <div class="result position-relative">
-                <p class="fw-bold p-0">LOCATION</p>
+                <p class="fw-bold p-0 fs-6">LOCATION</p>
                 <p id="Location" class="fw-bold ">Brooklyn,NY 10001</p>
             </div>
             <div class="result position-relative">
-                <p class="fw-bold p-0">TIMEZONE</p>
+                <p class="fw-bold p-0 fs-6">TIMEZONE</p>
                 <p id="TimeZone" class="fw-bold ">UTC-05:00</p>
             </div>
             <div class="result position-relative">
-                <p class="fw-bold p-0">ISP</p>
+                <p class="fw-bold p-0 fs-6">ISP</p>
                 <p id="ISP" class="fw-bold">SpaceX Starlink</p>
             </div>
         </div>
