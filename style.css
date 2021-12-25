@@ -7,6 +7,10 @@
 ::selection {
   background-color: #4a4caa94;
 }
+
+.ls-1{
+  letter-spacing: 1px !important;
+}
 .filter1{
 filter:hue-rotate(220deg) invert(10%) ;
 
