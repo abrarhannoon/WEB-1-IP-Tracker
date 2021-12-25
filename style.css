@@ -41,6 +41,10 @@ filter:hue-rotate(220deg) invert(10%) ;
   position:relative;
 }
 
+#topBtn{
+  display: none;
+}
+
 #inputContainer form{
   border-radius: 12px;
   overflow: hidden;
@@ -61,6 +65,16 @@ filter:hue-rotate(220deg) invert(10%) ;
   background-color: rgba(0, 0, 0, 0.185);
 }
 
+#theme{
+  z-index: 1000;
+  bottom: 25px;
+  left: 25px;
+}
+
+#filter1:hover .text-primary,#filter2:hover .text-primary{
+  color: white !important;
+}
+
 @media (max-width: 768px) {
   .col-md:not(:first-child)::before {
     display: none;
@@ -75,7 +89,9 @@ filter:hue-rotate(220deg) invert(10%) ;
     height: 150vh;
 
 }
+
 #topBtn{
+  display: block;
   z-index: 1000;
  position: absolute;
  bottom: 25px ;
