@@ -28,6 +28,7 @@
 
 #map{
   height: 70vh;
+  position:relative;
 }
 
 #inputContainer form{
@@ -53,11 +54,23 @@
 @media (max-width: 768px) {
   .col-md:not(:first-child)::before {
     display: none;
+
+    
 }
   #inputContainer{
     min-width: 75%;
+  
   }
   #map {
     height: 150vh;
+
+}
+#topBtn{
+  z-index: 1000;
+ position: absolute;
+ bottom: 25px ;
+ right: 25px;
+ 
 }
 }
+
