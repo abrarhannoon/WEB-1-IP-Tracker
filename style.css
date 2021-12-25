@@ -1,12 +1,11 @@
 * {
-  box-sizing: border-box;
-  color: #000;
   font-family: "Rubik", sans-serif;
 }
 
 ::selection {
   background-color: #4a4caa94;
 }
+/* HandMade Class Start */
 
 .ls-1{
   letter-spacing: 1px !important;
@@ -21,18 +20,24 @@ filter:hue-rotate(220deg) invert(10%) ;
 .filter3{
   filter:grayscale(20%) invert(95%);
 }
+
+/* HandMade Class End */
+
 #main {
   height: 30vh;
   background: url("./Images/backGround.png") no-repeat 100% 100% / cover;
 }
 
-#inputArea{
-  outline: 0;
+/* Input Area Start */
+
+#inputContainer{ z-index: 100; }
+
+#inputContainer form{
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-#inputContainer{
-  z-index: 100;
-}
+#inputArea{ outline: 0; }
 
 #inputArea:focus-within {
   transition: 0.5s ease;
@@ -44,24 +49,19 @@ filter:hue-rotate(220deg) invert(10%) ;
   opacity: 0.80;
 }
 
-#map{
-  height: 70vh;
-  position:relative;
-}
-
-#topBtn{
-  display: none;
-}
-
-#inputContainer form{
-  border-radius: 12px;
-  overflow: hidden;
-}
+/* Input Area End */
 
 #outputArea{
   z-index: 1000;
   border-radius: 12px;
 }
+
+
+#map{
+  height: 70vh;
+  position:relative;
+}
+
 
 .col-md:not(:first-child)::before {
   content: "";
@@ -73,6 +73,10 @@ filter:hue-rotate(220deg) invert(10%) ;
   background-color: rgba(0, 0, 0, 0.185);
 }
 
+/* Extra Start */
+
+#topBtn{ display: none; }
+
 #theme{
   z-index: 1000;
   bottom: 25px;
@@ -82,20 +86,22 @@ filter:hue-rotate(220deg) invert(10%) ;
 #filter1:hover .text-primary,#filter2:hover .text-primary{
   color: white !important;
 }
+/* Extra End */
 
-@media (max-width: 768px) {
-  .col-md:not(:first-child)::before {
-    display: none;
 
-    
-}
+/* Mobile Style */
+
+@media (max-width: 768px) { 
   #inputContainer{
     min-width: 75%;
   
   }
+  .col-md:not(:first-child)::before {
+    display: none; 
+}
+  
   #map {
     height: 150vh;
-
 }
 
 #topBtn{
@@ -104,7 +110,6 @@ filter:hue-rotate(220deg) invert(10%) ;
  position: absolute;
  bottom: 25px ;
  right: 25px;
- 
 }
 }
 
