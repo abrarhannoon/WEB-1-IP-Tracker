@@ -30,7 +30,7 @@ filter:hue-rotate(220deg) invert(10%) ;
 
 /* Input Area Start */
 
-#inputContainer{ z-index: 100; }
+#inputContainer{ z-index: 1000; }
 
 #inputContainer form{
   border-radius: 12px;
