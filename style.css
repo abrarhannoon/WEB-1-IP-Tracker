@@ -17,6 +17,10 @@
   outline: 0;
 }
 
+#inputContainer{
+  z-index: 100;
+}
+
 #inputArea:focus-within {
   transition: 0.5s ease;
   box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.5);
