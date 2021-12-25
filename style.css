@@ -79,9 +79,8 @@ filter:hue-rotate(220deg) invert(10%) ;
 
 #theme{
   z-index: 1000;
-  position: fixed;
+  bottom: 25px;
   left: 25px;
-  top:80vh;
 }
 
 #filter1:hover .text-primary,#filter2:hover .text-primary{
