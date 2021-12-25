@@ -19,7 +19,7 @@
     filter2.addEventListener('click',filter22);
 
     function filter11(){
-        qs('#map').classList.add('filter3');
+        qs('#map').classList.toggle('filter3');
       
         document.body.classList.remove('filter2');
         document.body.classList.toggle('filter1');
