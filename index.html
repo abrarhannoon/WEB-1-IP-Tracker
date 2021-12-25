@@ -23,6 +23,12 @@
 </head>
 
 <body>
+    <div class="btn-group" role="group" aria-label="Basic outlined example">
+        <button id='filter1' type="button" class="btn btn-outline-primary rounded-circle ">Left</button>
+        <button id='filter2'type="button" class="btn btn-outline-primary rounded-circle">Middle</button>
+      </div>
+
+
     <div id='main' class='d-flex justify-content-start align-items-center flex-column text-center'>
         <h1 class='text-white fw-bold my-4 my-md-3 my-xxl-5'>IP Address Tracker</h1>
         <div id='inputContainer' class="mb-4 mb-md-4 mb-xxl-5 w-50 d-flex justify-content-center">
@@ -30,22 +36,23 @@
                 <input class="border-0 p-3  p-md-2 p-xxl-4 w-75" id='inputArea' type="text"placeholder="Search for any IP address or domain ">
                 <input class='w-25 bg-black text-white fw-bold border-0 fs-1' id='searchBtn' type='submit'value='&#8250'></input>
             </form>
+           
         </div>
         <div id="outputArea" class=" row bg-white shadow-lg py-4 py-md-4 py-xxl-5 w-75">
-            <div class="result col-md position-relative">
-                <p class="p-0 small opacity-75">IP ADDRESS</p>
+            <div class="col-md position-relative">
+                <p class="p-0 small fw-bold opacity-75">IP ADDRESS</p>
                 <p id='IP' class="fw-bolder">192.212.174.101</p>
             </div>
-            <div class="result col-md position-relative">
-                <p class="p-0 small opacity-75">LOCATION</p>
+            <div class="col-md position-relative">
+                <p class="p-0 small fw-bold opacity-75">LOCATION</p>
                 <p id="Location" class="fw-bolder ">Brooklyn,NY 10001</p>
             </div>
-            <div class="result col-md position-relative">
-                <p class="p-0 small opacity-75">TIMEZONE</p>
+            <div class="col-md position-relative">
+                <p class="p-0 small fw-bold opacity-75">TIMEZONE</p>
                 <p id="TimeZone" class="fw-bolder ">UTC-05:00</p>
             </div>
-            <div class="result col-md position-relative">
-                <p class="p-0 small opacity-75">ISP</p>
+            <div class="col-md  position-relative">
+                <p class="p-0 small fw-bold opacity-75">ISP</p>
                 <p id="ISP" class="fw-bolder">SpaceX Starlink</p>
             </div>
         </div>

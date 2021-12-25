@@ -9,11 +9,27 @@
     const ISP=qs('#ISP')
     const SearchBtn=qs('form')
     const TextBox = qs('#inputArea');
-    
+    const filter1=qs('#filter1');
+    const filter2=qs('#filter2');
+
     window.addEventListener('load',GetMyIP)
     SearchBtn.addEventListener('submit', getIP)
     TextBox.addEventListener('keypress',HitEnter)
-    
+    filter1.addEventListener('click',filter11)
+    filter2.addEventListener('click',filter22);
+
+    function filter11(){
+        qs('#map').classList.add('filter3');
+      
+        document.body.classList.remove('filter2');
+        document.body.classList.toggle('filter1');
+    }
+    function filter22(){
+        qs('#map').classList.remove('filter3');
+        document.body.classList.remove('filter1');
+        document.body.classList.toggle('filter2');
+    }
+  
     async function GetMyIP(){
         let response=await fetch('https://api.ipify.org?format=json')
         let data= await response.json()
@@ -77,5 +93,4 @@
     function qs(element) {
         return document.querySelector(element)
     }
-    
 })()

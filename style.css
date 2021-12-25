@@ -7,7 +7,17 @@
 ::selection {
   background-color: #4a4caa94;
 }
+.filter1{
+/* filter:grayscale(100%) invert(95%); */
+filter:hue-rotate(220deg) invert(10%) ;
 
+}
+.filter2{
+  filter:hue-rotate(90deg);
+}
+.filter3{
+  filter:grayscale(20%) invert(95%);
+}
 #main {
   height: 30vh;
   background: url("./Images/backGround.png") no-repeat 100% 100% / cover;
