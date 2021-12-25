@@ -1,7 +1,7 @@
 // Here JS Code
 'use strict';
 (function(){
-    const IPIFY_API='at_bGJAwjVHgySQ1nkEsazeVczR2PGvU'
+    const IPIFY_API='at_MpMT3mXeWclET6pAHnIRWVsEZlEBK'
     const MAP_API='pk.eyJ1IjoibG9haW1hc3JpIiwiYSI6ImNrd2dudWtiZzBxNmYzMXBtOGYxYm1jY24ifQ.s90TP5x2nJhNbPUW25ixNw'
     const IP1=qs('#IP')
     const Locations=qs('#Location')
