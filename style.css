@@ -99,13 +99,13 @@ filter:hue-rotate(220deg) invert(10%) ;
 }
   
   #map {
-    height: 150vh;
+    height: 130vh;
 }
 
 #topBtn{
   display: block;
   z-index: 1000;
-  position: fixed;
+  position: absolute;
   bottom: 25px ;
   right: 25px;
 }
