@@ -83,9 +83,7 @@ filter:hue-rotate(220deg) invert(10%) ;
   left: 25px;
 }
 
-#filter1:hover .text-primary,#filter2:hover .text-primary{
-  color: white !important;
-}
+#filter1:hover .text-primary,#filter2:hover .text-primary{ color: white !important; }
 /* Extra End */
 
 
@@ -107,9 +105,9 @@ filter:hue-rotate(220deg) invert(10%) ;
 #topBtn{
   display: block;
   z-index: 1000;
- position: absolute;
- bottom: 25px ;
- right: 25px;
+  position: fixed;
+  bottom: 25px ;
+  right: 25px;
 }
 }
 

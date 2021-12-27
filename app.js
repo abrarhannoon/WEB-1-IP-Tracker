@@ -2,7 +2,7 @@
 'use strict';
 (function () {
     // Variables Start
-    const IPIFY_API = 'at_MpMT3mXeWclET6pAHnIRWVsEZlEBK'
+    const IPIFY_API = 'at_VA2TbBaBOg4XUmDsvdKM0eLwQqMko'
     const MAP_API = 'pk.eyJ1IjoibG9haW1hc3JpIiwiYSI6ImNrd2dudWtiZzBxNmYzMXBtOGYxYm1jY24ifQ.s90TP5x2nJhNbPUW25ixNw'
     const IP1 = qs('#IP')
     const Locations = qs('#Location')
@@ -81,7 +81,7 @@
     }
 
     // this function will get the text box value (IP) and give it to Result function
-    function getIP() {
+    function getIP(event) {
         event.preventDefault()
         let text = TextBox.value;
         Result(text);
