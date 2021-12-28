@@ -81,7 +81,7 @@
     }
 
     // this function will get the text box value (IP) and give it to Result function
-    function getIP(event) {
+    function getIP() {
         event.preventDefault()
         let text = TextBox.value;
         Result(text);
