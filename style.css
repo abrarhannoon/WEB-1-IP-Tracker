@@ -4,6 +4,7 @@
 
 ::selection {
   background-color: #4a4caa94;
+  color:white;
 }
 /* HandMade Class Start */
 
@@ -40,12 +41,12 @@ filter:hue-rotate(220deg) invert(10%) ;
 #inputArea{ outline: 0; }
 
 #inputArea:focus-within {
-  transition: 0.5s ease;
+  transition: 0.5s ;
   box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 #searchBtn:hover,#searchBtn:focus{
-  transition: 0.5s ease;
+  transition: 0.5s ;
   opacity: 0.80;
 }
 
