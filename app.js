@@ -76,12 +76,13 @@
     function HitEnter(event) {
         if (event.keyCode === 13) {
             event.preventDefault()
-            getIP();
+            getIP(event);
+            
         }
     }
 
     // this function will get the text box value (IP) and give it to Result function
-    function getIP() {
+    function getIP(event) {
         event.preventDefault()
         let text = TextBox.value;
         Result(text);
